@@ -78,7 +78,7 @@ namespace CajaRegistradoa
             btnEnCaja.Enabled = true;
             btnCodigosQR.Enabled = true;
         }
-        private void btnPerfil_Click(object sender, EventArgs e)
+        public void btnPerfil_Click(object sender, EventArgs e)
         {
             string NameForm = "Perfil";
             AbrirFormularios(NameForm);

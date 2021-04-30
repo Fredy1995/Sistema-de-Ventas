@@ -389,7 +389,6 @@ namespace CajaRegistradoa
         private System.Windows.Forms.Button btnMenuPrincipal;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnlContenidoPrincipal;
-        private System.Windows.Forms.Button btnPerfil;
         private System.Windows.Forms.Button btnPuntoVenta;
         private System.Windows.Forms.Button btnInventario;
         private System.Windows.Forms.Button btnVentas;
@@ -398,5 +397,6 @@ namespace CajaRegistradoa
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button btnCodigosQR;
+        public System.Windows.Forms.Button btnPerfil;
     }
 }

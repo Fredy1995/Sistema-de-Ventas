@@ -103,7 +103,7 @@ namespace CajaRegistradoa
             this.txtNombre.Location = new System.Drawing.Point(13, 59);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(277, 28);
-            this.txtNombre.TabIndex = 8;
+            this.txtNombre.TabIndex = 1;
             this.txtNombre.Text = "---------------------------------------------";
             this.txtNombre.Enter += new System.EventHandler(this.txtNombre_Enter);
             this.txtNombre.Leave += new System.EventHandler(this.txtNombre_Leave);
@@ -116,7 +116,7 @@ namespace CajaRegistradoa
             this.txtPaterno.Location = new System.Drawing.Point(13, 119);
             this.txtPaterno.Name = "txtPaterno";
             this.txtPaterno.Size = new System.Drawing.Size(131, 28);
-            this.txtPaterno.TabIndex = 9;
+            this.txtPaterno.TabIndex = 2;
             this.txtPaterno.Text = "Paterno";
             this.txtPaterno.Enter += new System.EventHandler(this.txtPaterno_Enter);
             this.txtPaterno.Leave += new System.EventHandler(this.txtPaterno_Leave);
@@ -129,7 +129,7 @@ namespace CajaRegistradoa
             this.txtMaterno.Location = new System.Drawing.Point(159, 119);
             this.txtMaterno.Name = "txtMaterno";
             this.txtMaterno.Size = new System.Drawing.Size(131, 28);
-            this.txtMaterno.TabIndex = 10;
+            this.txtMaterno.TabIndex = 3;
             this.txtMaterno.Text = "Materno";
             this.txtMaterno.Enter += new System.EventHandler(this.txtMaterno_Enter);
             this.txtMaterno.Leave += new System.EventHandler(this.txtMaterno_Leave);
@@ -166,7 +166,7 @@ namespace CajaRegistradoa
             this.dFecha.Location = new System.Drawing.Point(152, 194);
             this.dFecha.Name = "dFecha";
             this.dFecha.Size = new System.Drawing.Size(139, 28);
-            this.dFecha.TabIndex = 22;
+            this.dFecha.TabIndex = 4;
             this.dFecha.Value = new System.DateTime(1985, 1, 1, 0, 0, 0, 0);
             this.dFecha.Leave += new System.EventHandler(this.dFecha_Leave);
             // 
@@ -268,7 +268,7 @@ namespace CajaRegistradoa
             this.txtContraseña.Location = new System.Drawing.Point(136, 55);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(155, 28);
-            this.txtContraseña.TabIndex = 19;
+            this.txtContraseña.TabIndex = 6;
             this.txtContraseña.Text = "Password";
             this.txtContraseña.Enter += new System.EventHandler(this.txtContraseña_Enter);
             this.txtContraseña.Leave += new System.EventHandler(this.txtContraseña_Leave);
@@ -292,7 +292,7 @@ namespace CajaRegistradoa
             this.txtUsuario.Location = new System.Drawing.Point(93, 23);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(197, 28);
-            this.txtUsuario.TabIndex = 21;
+            this.txtUsuario.TabIndex = 4;
             this.txtUsuario.Text = "User name";
             this.txtUsuario.Enter += new System.EventHandler(this.txtUsuario_Enter);
             this.txtUsuario.Leave += new System.EventHandler(this.txtUsuario_Leave);
@@ -349,7 +349,7 @@ namespace CajaRegistradoa
             this.btnEncender.Location = new System.Drawing.Point(333, 257);
             this.btnEncender.Name = "btnEncender";
             this.btnEncender.Size = new System.Drawing.Size(171, 33);
-            this.btnEncender.TabIndex = 24;
+            this.btnEncender.TabIndex = 8;
             this.btnEncender.Text = "&ENCENDER";
             this.btnEncender.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEncender.UseVisualStyleBackColor = false;
@@ -372,7 +372,7 @@ namespace CajaRegistradoa
             this.btnCapturar.Location = new System.Drawing.Point(333, 296);
             this.btnCapturar.Name = "btnCapturar";
             this.btnCapturar.Size = new System.Drawing.Size(171, 33);
-            this.btnCapturar.TabIndex = 25;
+            this.btnCapturar.TabIndex = 9;
             this.btnCapturar.Text = "&CAPTURAR";
             this.btnCapturar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCapturar.UseVisualStyleBackColor = false;
@@ -394,7 +394,7 @@ namespace CajaRegistradoa
             this.btnGuardar.Location = new System.Drawing.Point(333, 335);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(171, 61);
-            this.btnGuardar.TabIndex = 26;
+            this.btnGuardar.TabIndex = 10;
             this.btnGuardar.Text = "&GUARDAR";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -408,7 +408,7 @@ namespace CajaRegistradoa
             this.cbDispositivos.Location = new System.Drawing.Point(333, 228);
             this.cbDispositivos.Name = "cbDispositivos";
             this.cbDispositivos.Size = new System.Drawing.Size(171, 29);
-            this.cbDispositivos.TabIndex = 27;
+            this.cbDispositivos.TabIndex = 7;
             this.cbDispositivos.Text = "Dispositivos";
             this.cbDispositivos.SelectedIndexChanged += new System.EventHandler(this.cbDispositivos_SelectedIndexChanged);
             // 

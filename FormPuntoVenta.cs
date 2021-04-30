@@ -217,7 +217,7 @@ namespace CajaRegistradoa
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Detalles: " + ex.Message + "\nVuevla a encender la cámara", "INFORME ESTADO DE CÁMARA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Detalles: " + ex.Message + "\nVuelva a encender la cámara", "INFORME ESTADO DE CÁMARA", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 btnOffScanner_Click(sender,e);
             }
             

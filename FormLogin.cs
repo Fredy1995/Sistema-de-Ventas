@@ -145,7 +145,7 @@ namespace CajaRegistradora
             FormAjustes MenuAjustes = new FormAjustes();
             MenuAjustes.Show();
             this.Visible = false;
-            MenuAjustes.btnAcerca_Click(sender,e); //Ejecutamos el control boton ajustes del form login
+            MenuAjustes.btnRegistrarse_Click(sender,e); //Ejecutamos el control boton ajustes del form login
             
         }
         /*
@@ -213,6 +213,7 @@ Application.Exit();
                             loading.Close();
                             frmprincipal.Show();
                             this.Visible = false;
+                            frmprincipal.btnPerfil_Click(sender,e);
                         } //Ocultar el loading
                        
                     }
