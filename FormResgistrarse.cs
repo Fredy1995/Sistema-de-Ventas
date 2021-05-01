@@ -238,30 +238,45 @@ namespace CajaRegistradoa
         }
         public void CerrarWebCam()
         {
-         
-                if (MiWebCam != null & MiWebCam.IsRunning)
+            try
+            {
+                if (MiWebCam != null && MiWebCam.IsRunning)
                 {
                     MiWebCam.SignalToStop();
                     MiWebCam = null;
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Detalles: " + ex.Message + "\nVuelva a encender la cámara", "INFORME ESTADO DE CÁMARA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
            
         }
      
         public void btnCapturar_Click(object sender, EventArgs e)
         {
-            if (btnCapturar.Enabled)
+            try
             {
-                MiWebCam.SignalToStop(); //Detener la camara
-                MiWebCam = null;
-                pbFoto.Image = pbFoto.Image;
-                 btnCapturar.Enabled = false;
-                 btnEncender.Enabled = true;
-                SeInicioCamara = false;
-                btnGuardar.Enabled = true;
-                Capturofoto = true;
-                GuardarEstadoCamara(SeInicioCamara); //Mando el estado de la Camara
+                if (btnCapturar.Enabled && MiWebCam != null)
+                {
+                    MiWebCam.SignalToStop(); //Detener la camara
+                    MiWebCam = null;
+                    pbFoto.Image = pbFoto.Image;
+                    btnCapturar.Enabled = false;
+                    btnEncender.Enabled = true;
+                    SeInicioCamara = false;
+                    btnGuardar.Enabled = true;
+                    Capturofoto = true;
+                    GuardarEstadoCamara(SeInicioCamara); //Mando el estado de la Camara
 
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Detalles: " + ex.Message + "\nVuelva a encender la cámara", "INFORME ESTADO DE CÁMARA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
             
         }
       
@@ -368,17 +383,24 @@ namespace CajaRegistradoa
             
             if (File.Exists(Pathtxt))
             {
-                StreamWriter flujoSalida = File.CreateText(Pathtxt);
-                if (CamaraActiva)
+                try
                 {
-                    flujoSalida.WriteLine("1\n- No borrar o cambiar el valor  1\n- NO ELIMINAR EL ARCHIVO!");
+                    StreamWriter flujoSalida = File.CreateText(Pathtxt);
+                    if (CamaraActiva)
+                    {
+                        flujoSalida.WriteLine("1\n- No borrar o cambiar el valor  1\n- NO ELIMINAR EL ARCHIVO!");
+                    }
+                    else
+                    {
+                        flujoSalida.WriteLine("0\n- No borrar o cambiar el valor  0\n- NO ELIMINAR EL ARCHIVO!");
+                    }
+                    flujoSalida.Dispose();
+                    flujoSalida.Close();
                 }
-                else
+                catch (IOException ex)
                 {
-                    flujoSalida.WriteLine("0\n- No borrar o cambiar el valor  0\n- NO ELIMINAR EL ARCHIVO!");
+                    MessageBox.Show("Detalles: " + ex.Message + "\nVuevla a encender la cámara", "INFORME ESTADO DE CÁMARA", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-              
-                flujoSalida.Close();
             }
             else
             {
