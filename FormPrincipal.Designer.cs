@@ -111,7 +111,7 @@ namespace CajaRegistradoa
             this.btnEnCaja.Name = "btnEnCaja";
             this.btnEnCaja.Size = new System.Drawing.Size(232, 50);
             this.btnEnCaja.TabIndex = 15;
-            this.btnEnCaja.Text = "EN &CAJA";
+            this.btnEnCaja.Text = "&EN CAJA";
             this.btnEnCaja.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEnCaja.UseVisualStyleBackColor = true;
             this.btnEnCaja.Click += new System.EventHandler(this.btnEnCaja_Click);

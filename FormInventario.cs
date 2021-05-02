@@ -303,25 +303,34 @@ namespace CajaRegistradoa
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (pboxCamara.Image != null)
+            try
             {
-                BarcodeReader barcodeReader = new BarcodeReader();
-                Result resultado = barcodeReader.Decode((Bitmap)pboxCamara.Image);
-
-                if (resultado != null)
+                if (pboxCamara.Image != null)
                 {
-                    txtCodigoAgregar.Text = resultado.ToString();
-                    playSimpleSound(); //Producir un sonido en tiempo de ejecución
-                    timer1.Stop();
-                    if (captureDevice.IsRunning)
-                        captureDevice.Stop();
+                    BarcodeReader barcodeReader = new BarcodeReader();
+                    Result resultado = barcodeReader.Decode((Bitmap)pboxCamara.Image);
+
+                    if (resultado != null)
+                    {
+                        txtCodigoAgregar.Text = resultado.ToString();
+                        playSimpleSound(); //Producir un sonido en tiempo de ejecución
+                        timer1.Stop();
+                        if (captureDevice.IsRunning)
+                            captureDevice.Stop();
                         pboxCamara.Image = Properties.Resources.Scanner;  //Regreso a la imagen anterior
                         btnOnScanner.Enabled = true; //habilito el botón On Scanner
                         btnOffScanner.Enabled = false; //Deshabilito el boton Off Scanner
                         SeInicioCamara = false;
                         GuardarEstadoCamara(SeInicioCamara); //Mando el estado de la Camara
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Detalles: " + ex.Message + "\nVuelva a encender la cámara", "INFORME ESTADO DE CÁMARA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                btnOffScanner_Click(sender, e);
+            }
+           
         }
         private void playSimpleSound()
         {
