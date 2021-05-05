@@ -90,7 +90,6 @@ namespace CajaRegistradoa
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(415, 109);
-            this.ControlBox = false;
             this.Controls.Add(this.lblMensaje);
             this.Controls.Add(this.btnAperturar);
             this.Controls.Add(this.txtCantidad);
