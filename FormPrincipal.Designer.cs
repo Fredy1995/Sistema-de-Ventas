@@ -134,6 +134,7 @@ namespace CajaRegistradoa
             this.btnVentas.Text = "MIS VENTAS";
             this.btnVentas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnVentas.UseVisualStyleBackColor = true;
+            this.btnVentas.Visible = false;
             // 
             // btnInventario
             // 

@@ -70,9 +70,9 @@ namespace CajaRegistradoa
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 14);
+            this.label2.Size = new System.Drawing.Size(74, 14);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Autor: Fredy Garate";
+            this.label2.Text = "Autor: F-G-M";
             // 
             // label3
             // 

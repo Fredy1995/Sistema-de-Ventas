@@ -90,9 +90,9 @@ namespace CajaRegistradoa
             this.label4.ForeColor = System.Drawing.Color.DimGray;
             this.label4.Location = new System.Drawing.Point(292, 123);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(198, 16);
+            this.label4.Size = new System.Drawing.Size(122, 16);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Copyright © Fredy Garate Marín";
+            this.label4.Text = "Copyright © F-G-M";
             // 
             // label5
             // 
@@ -116,9 +116,7 @@ namespace CajaRegistradoa
             this.txtBoxAcercade.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtBoxAcercade.Size = new System.Drawing.Size(252, 122);
             this.txtBoxAcercade.TabIndex = 6;
-            this.txtBoxAcercade.Text = "Sistema básico para el control de ventas de productos,almacenados en archivos de " +
-    "Excel, Caracteristicas de sistema: Sistema operativo Windows 10 , 64 bits, RAM 4" +
-    "GB o superior, Office 2016 o superior.";
+            this.txtBoxAcercade.Text = resources.GetString("txtBoxAcercade.Text");
             // 
             // FormAcercaDe
             // 

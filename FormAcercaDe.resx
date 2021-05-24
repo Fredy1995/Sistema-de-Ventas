@@ -605,4 +605,7 @@
         px9nds4MTVjiOWMD/9k=
 </value>
   </data>
+  <data name="txtBoxAcercade.Text" xml:space="preserve">
+    <value>Sistema básico para el control de ventas de productos,almacenados en archivos de Excel (almacenados en C:\DataBaseSV), Caracteristicas de sistema: Sistema operativo Windows 10 , 64 bits, RAM 4GB o superior, Office 2016 o superior.</value>
+  </data>
 </root>

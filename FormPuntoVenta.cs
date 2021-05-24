@@ -519,6 +519,7 @@ namespace CajaRegistradoa
         }
         private void btnCerrarVenta_Click(object sender, EventArgs e) //metodo del control Guardar venta
         {
+            
             long NoVenta = DevuelveNotaVentaNoRepetido();
             if (lblTotalVenta.Text != "$ 00.00")
             {
